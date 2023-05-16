@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'stag sans thin';
+	src: url('StagSansThin.eot');
+	src: url('StagSansThin.eot?#iefix') format('embedded-opentype'),
+		url('StagSansThin.woff') format('woff'),
+		url('StagSansThin.ttf') format('truetype'),
+		url('StagSansThin.svg') format('svg');
+}

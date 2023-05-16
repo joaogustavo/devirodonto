@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* CSS Document */
+/* redefinicao da template */
+.titulos, .botao-voltar {
+	display: none;
+	visibility: hidden;
+}
+.corpo {
+}
+.conteudos {
+	background: url(../img/home-quemsomos.jpg) no-repeat left top #f8f1e1;
+	background-size: 100%;
+	padding-top: 1vw;
+	max-width: 2000px;
+	width: 100%;
+}
+/* banners */
+.banners {
+	display: block;
+}
+/* RELATIVO A VERSAO DESKTOP */
+@media screen and (max-width: 2000px) and (min-width: 768px) {
+.banners {
+	height: 13.3vw;
+}
+}
+/* *************************FIM BANNERS********************* */
+/* quem somos */
+.quemsomos {
+	display: block;
+	height: 200vw;
+	margin: 0 auto;
+	max-height: 280px;
+	max-width: 870px;
+	position: relative;
+	width: 100%;
+	z-index: 9;
+}
+.quemsomos-info {
+	display: inline-block;
+	float: left;
+	max-width: 432px;
+	width: 49.6%;
+}
+.quemsomos-img {
+	left: -25%;
+	max-width: 287px;
+	position: absolute;
+	top: .5vw;
+	width: 27%;
+}
+.quemsomos-titulo {
+	background: url(../img/home-quemsomos-titulo-linha.png) no-repeat left bottom;
+	color: #d9675b;
+	font-family: 'stag sans thin';
+	font-size: 4.5rem;
+	font-weight: bold;
+	line-height: 3.4rem;
+	margin-bottom: 5px;
+	max-width: 235px;
+	padding-bottom: 3%;
+	padding-left: 5%;
+	padding-top: 5rem;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.071);
+	text-transform: uppercase;
+}
+.quemsomos-titulo span {
+	display: block;
+	margin-left: 5%;
+}
+.quemsomos-texto {
+	color: #d9675b;
+	font-family: 'stagsansbook';
+	font-size: 2rem;
+	margin-left: 6%;
+	max-width: 350px;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.071);
+}
+.quemsomos-galeria {
+	display: inline-block;
+	float: left;
+	margin-top: 2.5rem;
+	max-width: 408px;
+	text-align: center;
+	width: 46.9%;
+}
+.quemsomos-galeria-fotodestaque {
+	border: solid 1px #ffffff;
+	box-shadow: 0.5px 0.866px 1px 0px rgba(0, 0, 0, 0.137);
+	display: block;
+	margin-bottom: 10px;
+	max-width: 391px;
+	width: 18.8vw;
+}
+.quemsomos-galeria-miniaturas {
+	text-align: left;
+	width: 100%;
+}
+.quemsomos-galeria-miniatura {
+	border: solid 1px #ffffff;
+	box-shadow: 0.5px 0.866px 1px 0px rgba(0, 0, 0, 0.137);
+	display: inline-block;
+	margin-bottom: 10px;
+	max-width: 52px;
+	width: 3vw;
+}
+.quemsomos-galeria-miniaturas a {
+	margin: 0 .25vw;
+}
+.quemsomos-galeria-miniaturas a:first-child {
+	margin-left: 0 !important;
+}
+.quemsomos-galeria-miniaturas a img:hover {
+	border: solid 1px #d9675b;
+}
+/* noticias */
+.noticias {
+	height: 90vw;
+	margin: 0 auto;
+	margin-bottom: 7px;
+	margin-top: 12px;
+	max-height: 315px;
+	max-width: 977px;
+	width: 100%;
+}
+.noticias-cabecalho {
+	color: #f48258;
+	display: block;
+	font-family: 'stagsansbook';
+	margin-bottom: 12px;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.075);
+	width: 99%;
+}
+.noticias-titulo-icone {
+	display: inline-block;
+	margin-right: 14px;
+	max-width: 28px;
+	width: 100%;
+}
+.noticias-cabecalho h2 {
+	display: inline-block;
+	font-size: 2rem;
+	margin: 0;
+	padding: 0;
+	vertical-align: sub;
+}
+.noticias-botao {
+	float: right;
+	max-width: 85px;
+	width: 100%;
+}
+.noticia {
+	font-weight: 100;
+	display: inline-block;
+	float: left;
+	font-family: 'opensans regular 2';
+	font-size: 1.2rem;
+	margin: 0 .8vw;
+	max-width: 222px;
+	position: relative;
+	width: 100%;
+}
+.noticia:nth-child(2) {
+	margin-left: 0;
+}
+.noticia:last-child {
+	margin-right: 0;
+}
+.noticia a {
+	color: #686868;
+}
+.noticia-img {
+	background-color: rgba(244, 130, 88, 0.741);
+	display: block;
+	max-width: 222px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.noticia img {
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
+.noticia img:hover {
+	opacity: 0.2;
+}
+.noticia-img:after {
+	background: url(../img/icone-lupa.svg) no-repeat center center;
+	background-size: 50%;
+	content: "";
+	display: none;
+	height: 30%;
+	left: 35%;
+	max-height: 136px;
+	max-width: 222px;
+	position: absolute;
+	top: 35%;
+	width: 30%;
+	z-index: 1;
+}
+.noticia-img:hover::after {
+	display: block !important;
+}
+.noticia-titulo {
+	font-family: 'crimson_textbold';
+	font-size: 1.7rem;
+	color: #686868;
+	display: block;
+	margin: 9px 0;
+}
+@media screen and (max-width: 1300px) and (min-width: 993px) {
+.quemsomos-info {
+	margin-left: 10%;
+	width: 40%;
+}
+.quemsomos-img {
+	left: -9%;
+	width: 20%;
+}
+.quemsomos-galeria {
+	float: right;
+}
+.quemsomos-galeria-fotodestaque {
+	width: 100%;
+}
+.quemsomos-galeria-miniatura {
+	width: 100%;
+}
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+.quemsomos-info {
+	margin-left: 0;
+	width: 40%;
+}
+.quemsomos-img {
+	display: none;
+}
+.quemsomos-titulo {
+	padding-left: 0;
+	padding-top: 0;
+}
+.quemsomos-texto {
+	margin-left: 0;
+}
+.quemsomos-galeria-fotodestaque {
+	width: 100%;
+}
+.quemsomos-galeria-miniatura {
+	width: 100%;
+}
+.noticia {
+	width: 22%;
+}
+}
+/* RELATIVO A VERSAO MOVEL */
+@media screen and (max-width: 767px) and (min-width: 176px) {
+.corpo {
+	background: #ffffff;
+	padding-top: 10px;
+}
+.conteudos {
+	background: #ffffff;
+	padding-left: 0;
+	padding-right: 0;
+}
+.banners {
+	background: #ffffff;
+	height: 26.3vw;
+}
+.quemsomos {
+	max-height: 420px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.quemsomos-info, .quemsomos-galeria {
+	display: block;
+	float: none;
+	width: 100%;
+}
+.quemsomos-info {
+	margin-left: 0;
+	max-width: 760px;
+}
+.quemsomos-img {
+	display: none;
+}
+.quemsomos-titulo {
+	display: block;
+	font-size: 20px;
+	line-height: 15px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-top: 10px;
+	width: 100%;
+}
+.quemsomos-titulo span {
+	display: inline-block;
+	margin-left: 2%;
+}
+.quemsomos-texto {
+	display: block;
+	float: left;
+	font-size: 14px;
+	margin-left: 0;
+	margin-bottom: 20px;
+	max-width: 760px;
+}
+.quemsomos-galeria {
+	max-width: 760px;
+	width: 100%;
+}
+.quemsomos-galeria-fotodestaque {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+.quemsomos-galeria-miniaturas {
+	text-align: center;
+}
+.quemsomos-galeria-miniatura {
+	width: 100%;
+}
+.noticias {
+	background: #f8f1e1;
+	height: 1240px;
+	max-height: 1800px;
+	padding: 3%;
+}
+.noticia {
+	display: block;
+	float: none;
+	height: 280px;
+	margin: 0 auto;
+	max-width: 760px;
+	text-align: center;
+	width: 100%;
+}
+.noticia:nth-child(2) {
+	margin-left: auto;
+	margin-top: 50px;
+}
+.noticia:last-child {
+	margin-right: auto;
+}
+.noticia-img {
+	margin: 0 auto;
+	width: 100%;
+}
+.noticia-titulo {
+	margin: 5px 0;
+}
+}
+@media screen and (max-width: 490px) and (min-width: 176px) {
+}

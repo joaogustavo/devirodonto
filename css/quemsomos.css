@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.navegacao ul li:first-child a {
+	background: #000000;
+	color: #ffffff;
+	cursor: default;
+}
+.menu-movel li:first-child a {
+	background: #e41d08;
+	color: #ffffff;
+	cursor: default;
+}

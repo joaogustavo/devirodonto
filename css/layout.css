@@ -1,0 +1,886 @@
+/* CSS Document */
+/* IMPORTAÇÕES */
+@import url("normalize.css");
+@import url("hover.css");
+/* FONTES */
+@import url("../webfonts/crimson-text-bold/stylesheet.css");
+@import url("../webfonts/myriad-pro-regular/stylesheet.css");
+@import url("../webfonts/open-sans-regular/stylesheet.css");
+@import url("../webfonts/open-sans-semibold/stylesheet.css");
+@import url("../webfonts/stag-sans-book/stylesheet.css");
+@import url("../webfonts/stag-sans-thin/stylesheet.css");
+html {
+	font-size: 62.5%;
+}
+/* RELATIVO A VERSAO ACIMA DE 768px */
+@media screen and (min-width: 768px) {
+.mobile {
+	display: none !important;
+	visibility: hidden !important;
+}
+}
+/* LAYOUT GLOBAL */
+* {
+	text-rendering: optimizeLegibility;
+}
+body {
+	background: url(../img/fundo.jpg) no-repeat -10vw top #fefefe;
+	background-size: 120%;
+	color: #474849;
+	font-family: Arial, sans-serif;
+	font-size: 1.5rem;
+	margin: 0 auto;
+	max-width: 2000px;
+	min-width: 280px;
+	position: relative;
+	z-index: 2;
+}
+.fundo {
+	display: block;
+	left: 0px;
+	position: absolute;
+	width: 100%;
+	z-index: 1 !important;
+}
+.topo, .banners .corpo, .titulos, .conteudos, #rodape, .rodape {
+	position: relative;
+	z-index: 5;
+}
+.topo {
+	display: block;
+	height: 280px;
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 100%;
+}
+#logo {
+	left: 5.556%;
+	max-width: 162px;
+	position: absolute;
+	top: 67px;
+	width: 13.85%;
+	z-index: 20 !important;
+}
+#logo a {
+}
+.logo {
+	max-width: 162px;
+	width: 100%;
+}
+.telefone {
+	color: #e41d08;
+	font-family: 'stag sans thin';
+	font-size: 2.46rem;
+	font-weight: bold;
+	margin-top: 15px;
+	max-width: 1033px;
+	padding-top: .9vw;
+	padding-right: 3vw;
+	position: relative;
+	text-align: right;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.071);
+	z-index: 9;
+}
+.telefone-fundo {
+	display: block;
+	max-width: 404px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 1 !important;
+}
+.telefone-icone {
+	margin-right: 2.421%;
+	max-width: 21px;
+}
+.telefone em {
+	display: inline;
+	font-size: 4.5rem;
+	font-style: normal;
+	position: relative;
+	vertical-align: middle;
+	z-index: 9;
+}
+.mobile-telefone {
+	color: #e41d08;
+	position: relative;
+	z-index: 9;
+	text-decoration: none;
+}
+.mobile-telefone:hover {
+	color: #e41d08;
+	text-decoration: none;
+}
+.mobile-telefone em {
+	font-style: normal;
+}
+.navegacao {
+	background: #e41d08;
+	display: block;
+	font-family: 'stagsansbook';
+	font-size: 2.185rem;
+	margin: 0 auto;
+	max-width: 902px;
+	position: absolute;
+	right: 7.2%;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.184);
+	top: 245px;
+	z-index: 20 !important;
+}
+.navegacao ul {
+	display: block;
+	list-style: none;
+	margin: 0 auto;
+	max-height: 50px;
+	padding: 0;
+	position: relative;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+	width: 100%;
+	z-index: 2;
+}
+.navegacao ul li {
+	display: inline-block;
+}
+.navegacao ul li a {
+	color: #ffffff;
+	display: block;
+	padding: .9rem .8em;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.09);
+}
+.navegacao ul li a:hover, .navegacao ul li a:focus {
+	background: #000000;
+	color: #ffffff;
+	text-decoration: none;
+}
+.banners {
+	display: none;
+	max-width: 2000px;
+	position: relative;
+	width: 100%;
+	z-index: 5;
+}
+.banner {
+	display: block;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: 6 !important;
+}
+.corpo {
+	background: url(../img/corpo.jpg) no-repeat left bottom #faf4f4;
+	background-size: 100%;
+	margin-top: 13vw;
+}
+.titulos {
+	margin: 0 auto;
+	max-width: 1170px;
+	position: relative;
+	z-index: 9;
+}
+.titulos h1 {
+	background: url(../img/titulos.png) no-repeat left bottom;
+	color: #d9675b;
+	font-family: 'stag sans thin';
+	font-size: 4.2rem;
+	font-weight: bold;
+	left: 5.5%;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 1.13vw;
+	position: absolute;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.071);
+	top: -3.9vw;
+}
+.conteudos {
+	margin: 0 auto;
+	max-width: 1170px;
+	min-height: 330px;
+	padding: 4vw 0 2.5vw 0;
+	padding-left: 4%;
+	position: relative;
+	z-index: 9;
+}
+.menu-interno {
+	border: solid 1px #dcdcdc;
+	display: inline-block;
+	float: left;
+	font-family: 'stagsansbook';
+	font-size: 1.2em;
+	margin-right: 2%;
+	padding: 1.2em 1.2em 1.2em 0.5em;
+	position: relative;
+	width: 26%;
+	z-index: 9 !important;
+}
+.menu-interno-cabecalho {
+	border-bottom: solid 1px #dcdcdc;
+	color: #2f297e;
+	display: block;
+	font-weight: 600;
+	padding-bottom: .6em;
+	text-transform: uppercase;
+	width: 100%;
+}
+.menu-interno ul {
+	list-style: none;
+	margin-bottom: 0;
+	margin-top: .6em;
+	padding-left:0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+.menu-interno ul li {
+	border-bottom: solid 1px #dcdcdc;
+	width: 100%;
+}
+.menu-interno ul li:last-child {
+	border-bottom: none;
+}
+.menu-interno ul li a {
+	color: #e82129;
+	display: block;
+	padding: .3em 0;
+	width: 100%;
+}
+.menu-interno ul li:last-child a {
+	padding-bottom: 0;
+}
+.menu-interno ul li a:before {
+	content: "\bb";
+	display: inline-block;
+	height: 12px;
+	margin-left: .4em;
+	margin-right: .3em;
+	width: 12px;
+}
+.conteudos-com-navegacao {
+	display: inline-block;
+	float: left;
+	padding-bottom: 35px;
+	position: relative;
+	width: 70%;
+	z-index: 9;
+}
+.botao-voltar {
+	margin: 0 auto;
+	max-width: 1170px;
+	text-align: right;
+}
+.botao-voltar-icone {
+	margin-bottom: -50px;
+	margin-right: 2.9vw;
+	max-width: 136px;
+	position: relative;
+	z-index: 9;
+}
+#rodape {
+	background: url(../img/rodape.png) no-repeat -10vw top;
+	background-size: 120%;
+	color: #ca4412;
+	padding-top: 63px;
+	width: 100%;
+}
+.rodape {
+	font-family: 'stagsansbook';
+	font-size: 1.6rem;
+	margin: 0 auto;
+	max-width: 1170px;
+	padding-left: 7.2%;
+}
+.rodape a {
+	color: #ca4412;
+}
+.contatos {
+	display: inline-block;
+	float: left;
+	width: 50%;
+}
+.rodape-telefone {
+}
+.rodape-telefone span.mobile {
+	display: inline-block !important;
+}
+.rodape-telefone-icone, .endereco-icone, .email-icone {
+	background: #f48258;
+	margin-right: 3%;
+	max-width: 42px;
+	padding: 11px;
+}
+.endereco {
+	margin: 2px 0;
+}
+.endereco-icone {
+}
+.email {
+}
+.email-icone {
+}
+.mapa {
+	display: inline-block;
+	float: left;
+	margin-left: 1%;
+	width: 45%;
+}
+.mapa-cabecalho {
+	font-size: 1.6rem;
+	font-weight: normal;
+	margin: 0;
+	margin-bottom: 7px;
+	padding: 0;
+}
+.mapa img {
+	border: solid 1px #f48258;
+	box-shadow: 0.5px 0.866px 1px 0px rgba(0, 0, 0, 0.082);
+	max-width: 512px;
+	width: 100%;
+}
+.rodape-fundo-divisao {
+	background: url(../img/rodape-fundo-copyright-gosites.jpg) repeat-x left top;
+	display: block;
+	float: left;
+	height: 9px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	width: 100%;
+}
+.copyright-gosites {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	max-width: 1170px;
+}
+.copyright {
+	color: #c94919;
+	font-family: 'opensans semibold 3';
+	font-size: 1.2rem;
+	margin-left: 7.1vw;
+	width: 30%;
+}
+#gosites {
+	color: #f58220;
+	float: right;
+	font-family: 'myriad pro regular';
+	font-size: 1.1rem;
+	margin-right: 1vw;
+	width: 20%;
+}
+.gosites {
+	margin-left: 5px;
+	max-width: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+/******************* MODAL BOOTSTRAP (relativo ao menu mobile) *******************/
+.glyphicon-modal-window:before {
+	content: "\e237";
+}
+.modal-open {
+	overflow: hidden;
+}
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	display: none;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+.modal.fade .modal-dialog {
+	-webkit-transition: -webkit-transform .3s ease-out;
+	-o-transition: -o-transform .3s ease-out;
+	transition: transform .3s ease-out;
+	-webkit-transform: translate(0%, -25%);
+	-ms-transform: translate(0%, -25%);
+	-o-transform: translate(0%, -25%);
+	transform: translate(0%, -25%);
+}
+.modal.in .modal-dialog {
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+.modal-open .modal {
+	float: left;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.modal-dialog {
+	position: relative;
+	width: 100%;
+	margin: 0px;
+}
+.modal-content {
+	position: relative;
+	background-color: transparent;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	width: 100%;
+	z-index: 1000;
+}
+.modal-backdrop {
+	background: url(../img/logo.svg) no-repeat 10vw 10vw #000000;
+	background-size: 190%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.modal-backdrop.fade {
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.modal-backdrop.in {
+	filter: alpha(opacity=50);
+	opacity: .99;
+}
+.modal-header {
+	border-bottom: none;
+	padding: 30px;
+	position: relative;
+	text-align: right;
+	z-index: 1000;
+}
+.modal-header .fechar {
+	margin-top: -2px;
+}
+.modal-title {
+	line-height: 1.42857143;
+	margin: 0;
+	position: relative;
+	z-index: 1000;
+}
+.modal-body {
+	position: relative;
+	padding: 0;
+	z-index: 1000;
+}
+.modal-body .menu-movel {
+	position: relative;
+	z-index: 1000;
+}
+.modal-footer {
+	display: none;
+	position: relative;
+	visibility: hidden;
+	z-index: 1000;
+	/*padding: 15px;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;*/
+}
+.modal-scrollbar-measure {
+	position: absolute;
+	top: -9999px;
+	width: 50px;
+	height: 50px;
+	overflow: scroll;
+}
+
+@media (min-width: 768px) {
+.modal-dialog {
+	width: 50%;
+	margin: 30px auto;
+}
+.modal-content {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.modal-sm {
+	width: 100%;
+}
+}
+
+@media (min-width: 992px) {
+.modal-lg {
+	width: 900px;
+}
+}
+/******************* fim modal bootstrap *******************/
+
+@media screen and (max-width: 1679px) and (min-width: 1500px) {
+.corpo {
+	margin-top: 11vw;
+}
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1420px) {
+.corpo {
+	margin-top: 10vw;
+}
+}
+@media screen and (max-width: 1419px) and (min-width: 1340px) {
+.corpo {
+	margin-top: 8.5vw;
+}
+}
+@media screen and (max-width: 1339px) and (min-width: 1282px) {
+.corpo {
+	margin-top: 7vw;
+}
+}
+@media screen and (max-width: 1350px) {
+.titulos h1 {
+	font-size: 2.8vw;
+}
+}
+@media screen and (max-width: 1281px) and (min-width: 768px) {
+.topo {
+	height: 17.3vw;
+}
+}
+@media screen and (max-width: 1068px) {
+.endereco {
+	font-size: 12px;
+}
+}
+@media screen and (max-width: 827px) {
+#gosites {
+	width: 30%;
+}
+}
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+.telefone {
+	float: right;
+	font-size: 1.46rem;
+	padding-left: 4.5vw;
+	padding-right: 0;
+	padding-top: 15px;
+	text-align: left;
+	width: 47%;
+}
+.telefone-fundo {
+	left: 0 !important;
+	width: 45%;
+}
+.telefone-icone {
+	margin-right: 10px;
+	width: 1.4vw;
+}
+.telefone em {
+	font-size: 2vw;
+}
+}
+@media screen and (max-width: 1530px) and (min-width: 768px) {
+#logo {
+	left: 2%;
+	top: 2vw;
+	width: 7vw;
+}
+.navegacao {
+	right: 2%;
+	top: 11.2vw;
+}
+.navegacao ul li a {
+	padding: .9rem .652em;
+}
+}
+@media screen and (max-width: 829px) and (min-width: 768px) {
+.navegacao {
+	left: 2%;
+}
+}
+@media screen and (max-width: 1600px) and (min-width: 869px) {
+#logo {
+	width: 11vw;
+}
+}
+@media screen and (max-width: 868px) and (min-width: 850px) {
+#logo {
+	width: 8.5vw;
+}
+}
+/* RELATIVO A VERSAO MOVEL */
+@media screen and (max-width: 767px) and (min-width: 176px) {
+* {
+	text-rendering: geometricPrecision;
+	-webkit-transition: all ease .7s;
+	-moz-transition: all ease .7s;
+	transition: all ease .7s;
+}
+.desktop {
+	display: none !important;
+	visibility: hidden !important;
+}
+a:focus {
+	outline: none;
+}
+body {
+	padding-top: 4.24em;
+}
+.topo {
+	display: none !important;
+	visibility: hidden !important;
+}
+.mobile {
+	display: block !important;
+	visibility: visible !important;
+}
+.fundo {
+	height: 10%;
+	top: -.5vw;
+}
+.mobile-topo {
+	background: rgba(224,226,221, 0.95);
+	box-shadow: rgba(6, 57, 106, 0.329412) 0px 1px 5px 0px;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 50;
+}
+#logo-mobile {
+	height: 4.3em;
+	margin-left: 0;
+	max-width: 110px;
+	position: relative;
+	text-align: left;
+	z-index: 51;
+}
+.logo-mobile {
+	max-width: 65px;
+	position: relative;
+	z-index: 52;
+}
+.logo-fundo-mobile {
+	bottom: -1.07em;
+	display: block;
+	left: 0px;
+	max-width: 261px;
+	padding-top: 2.14285em;
+	position: absolute;
+	width: 100%;
+	z-index: 51;
+}
+#nav-mobile {
+	height: 40px;
+	margin-right: .5em;
+	margin-top: .7143em;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 40px;
+	z-index: 52;
+}
+#nav-mobile {
+	position: fixed;
+	z-index: 60;
+}
+.logo-mobile-menu {
+	margin-top: 0.7857em;
+	max-width: 179px;
+}
+/* botao fechar (menu) */
+.fechar {
+	max-width: 40px;
+	position: absolute;
+	right: .5em;
+	top: 0px;
+	width: 13%;
+}
+.fechar img {
+	margin-right: .5em;
+	margin-top: .7143em;
+	width: 100%;
+}
+/* menu movel */
+.menu-movel {
+	list-style: none;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	text-align: center;
+}
+.menu-movel li a {
+	color: #ffffff;
+	font-family: 'stagsansbook';
+	font-weight: 400;
+	font-size: 1.5em;
+	display: block;
+	letter-spacing: -.02em;
+	margin-top: .2em;
+	padding: .01em 1em;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.11);
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+.menu-movel li a:hover {
+	background: #e41d08;
+	color: #ffffff;
+	text-decoration: none;
+}
+.menu-movel li:nth-child(even) a:hover {
+	background: #979384;
+	color: #ffffff;
+	text-decoration: none;
+}
+/*.banners {
+	height: 30vw;
+}*/
+.conteudos {
+	min-height: 16vw;
+}
+.menu-interno {
+	display: block;
+	float: none;
+	font-size: 1.15em;
+	margin-bottom: 10px;
+	margin-right: 0;
+	padding: .3em;
+	width: 100%;
+}
+.menu-interno-cabecalho {
+	border-bottom: solid 1px #dcdcdc;
+	color: #2f297e;
+	display: block;
+	font-weight: 600;
+	margin-bottom: 6px;
+	padding-bottom: 2px;
+	text-transform: uppercase;
+	width: 100%;
+}
+.menu-interno ul li {
+	border-bottom: 0;
+	display: inline-block;
+	vertical-align: middle;
+	width: 20%;
+}
+.menu-interno ul li a {
+	border: solid 1px #dcdcdc;
+	color: #e82129;
+	display: block;
+	padding: 2px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.menu-interno ul li a:before {
+	display: none;
+}
+.corpo {
+	margin-top: 0;
+	padding-top: 15px;
+}
+.titulos {
+	padding-left: 2%;
+}
+.titulos h1 {
+	font-size: 2.4rem;
+	left: 0;
+	position: relative;
+	top: 0;
+}
+.conteudos {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.menu-interno {
+	display: block;
+	float: none;
+	font-size: 1.15em;
+	margin-bottom: 10px;
+	margin-right: 0;
+	padding: .3em;
+	width: 100%;
+}
+.menu-interno-cabecalho {
+	border-bottom: solid 1px #dcdcdc;
+	color: #2f297e;
+	display: block;
+	font-weight: 600;
+	margin-bottom: 6px;
+	padding-bottom: 2px;
+	text-transform: uppercase;
+	width: 100%;
+}
+.menu-interno ul li {
+	border-bottom: 0;
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+.menu-interno ul li a {
+	border: solid 1px #dcdcdc;
+	color: #e82129;
+	display: block;
+	padding: 2px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.menu-interno ul li a:before {
+	display: none;
+}
+.conteudos-com-navegacao {
+	display: block;
+	float: none;
+	position: relative;
+	width: 100%;
+	z-index: 9;
+}
+.botao-voltar-icone {
+	margin-bottom: -35px;
+	margin-right: 2vw;
+	width: 90px;
+}
+.contatos, .mapa {
+	display: block;
+	float: none;
+	width: 100%;
+}
+.mapa {
+	margin: 40px auto;
+	text-align: center;
+}
+.copyright, #gosites {
+	margin: 0 2%;
+	width: 50%;
+}
+#gosites {
+	text-align: right;
+}
+}
+@media screen and (max-width: 542px) {
+.rodape {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.contatos {
+	padding-left: 0;
+	padding-right: 0;
+}
+.endereco {
+	font-size: 12px;
+}
+}
+@media screen and (max-width: 372px) {
+.copyright, #gosites {
+	display: block;
+	float: none;
+	margin: 5px 0;
+	text-align: center;
+	width: 100%;
+}
+}
